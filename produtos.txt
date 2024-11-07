@@ -1,0 +1,50 @@
+001,Arroz,Comida,5.99,Alimentos,10,100
+002,Coca,Bebida,3.5,Bebidas,5,50
+003,Shampoo,Higiene,12.0,Higiene,0,30
+004,Feijão,Comida,4.99,Alimentos,15,80
+005,Carne Bovina,Carne,29.99,Carnes,3,20
+006,Frango,Carne,15.5,Carnes,8,60
+007,Peixe,Carne,25.75,Carnes,7,40
+008,Pão,Comida,2.5,Alimentos,30,150
+009,Macarrão,Comida,6.25,Alimentos,20,120
+010,Alface,Vegetal,3.0,Hortifruti,50,200
+011,Tomate,Vegetal,4.8,Hortifruti,25,150
+012,Cenoura,Vegetal,2.2,Hortifruti,40,180
+013,Maçã,Fruta,3.5,Frutas,60,300
+014,Banana,Fruta,2.8,Frutas,70,250
+015,Queijo,Laticínio,15.0,Laticínios,10,50
+016,Iogurte,Laticínio,5.0,Laticínios,20,100
+017,Ovos,Laticínio,6.99,Laticínios,25,200
+018,Óleo,Limpeza,8.5,Limpeza,10,60
+019,Detergente,Limpeza,3.2,Limpeza,15,100
+020,Shampoo,Cosmético,12.0,Cosméticos,8,40
+021,Pasta de Dente,Cosmético,4.5,Cosméticos,25,150
+022,Sabonete,Cosmético,2.0,Cosméticos,35,180
+023,Desodorante,Cosmético,7.99,Cosméticos,18,90
+024,Papel Higiênico,Limpeza,9.0,Limpeza,40,200
+025,Esponja,Limpeza,1.5,Limpeza,60,250
+026,Vassoura,Limpeza,15.0,Limpeza,12,40
+027,Rodo,Limpeza,10.0,Limpeza,14,70
+028,Café,Bebida,8.99,Bebidas,22,110
+029,Chá,Bebida,5.5,Bebidas,30,150
+030,Suco,Bebida,4.0,Bebidas,25,120
+031,Água,Bebida,1.2,Bebidas,60,200
+032,Refrigerante,Bebida,5.0,Bebidas,40,180
+033,Molho de Tomate,Condimento,2.9,Condimentos,20,100
+034,Sal,Condimento,1.99,Condimentos,50,200
+035,Açúcar,Condimento,3.99,Condimentos,15,80
+036,Farinha,Comida,7.5,Alimentos,18,90
+037,Bolo,Comida,12.5,Alimentos,10,50
+038,Chocolates,Doce,4.9,Doces,25,120
+039,Biscoito,Doce,3.0,Doces,30,150
+040,Balas,Doce,2.5,Doces,40,200
+041,Sorvete,Doce,9.99,Doces,12,60
+042,Cereal,Comida,5.0,Alimentos,20,100
+043,Creme de Leite,Laticínio,3.75,Laticínios,10,50
+044,Requeijão,Laticínio,8.0,Laticínios,12,60
+045,Creme de Ricota,Laticínio,4.99,Laticínios,30,150
+046,Manteiga,Laticínio,6.0,Laticínios,8,40
+047,Presunto,Carnes,15.0,Carnes,25,100
+048,Peito de Frango,Carnes,19.99,Carnes,18,80
+049,Linguiça,Carnes,14.0,Carnes,12,50
+050,Carne Suína,Carnes,20.0,Carnes,15,60
