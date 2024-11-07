@@ -31,7 +31,6 @@ class Produto:
                 f"Quantidade: {self.quantidade}\n"
                 f"Avaliações: {self.avaliacoes}\n")
 
-
 class SistemaMercado:
     def __init__(self):
         self.produtos = []
@@ -40,7 +39,38 @@ class SistemaMercado:
         }
         self.usuario_logado = None
         self.vendas = []
-        self.carregar_dados()
+        self.carregar_dados() 
+
+    def login(self):
+        email = input("Informe o email: ")
+        senha = input("Informe a senha: ")
+
+        if email not in self.usuarios:
+            print("Usuário não encontrado. Deseja se cadastrar como usuário comum? (s/n)")
+            if input().lower() == 's':
+                self.cadastrar_usuario(email, senha)
+            else:
+                return False
+
+        usuario = self.usuarios.get(email)
+        if usuario and usuario.senha == senha:
+            self.usuario_logado = usuario
+            print("Login realizado com sucesso!\n")
+            if usuario.is_admin:
+                self.menu_administrador()
+            else:
+                self.menu_usuario()
+            return True
+        else:
+            print("Email ou senha incorretos.")
+            return False
+
+    def cadastrar_usuario(self, email=None, senha=None):
+        if not email:
+            email = input("Informe o email do novo usuário: ")
+            senha = input("Informe a senha: ")
+        self.usuarios[email] = Usuario(email, senha)
+        print("Usuário cadastrado com sucesso!\n")
 
     def carregar_dados(self, arquivo="produtos.txt"):
         try:
@@ -58,34 +88,13 @@ class SistemaMercado:
                 f.write(f"{produto.codigo},{produto.nome},{produto.tipo},{produto.preco},{produto.setor},{produto.desconto},{produto.quantidade}\n")
         print("Dados salvos com sucesso!\n")
 
-    def login(self):
-        email = input("Informe o email: ")
-        senha = input("Informe a senha: ")
-        usuario = self.usuarios.get(email)
-
-        if usuario and usuario.senha == senha:
-            self.usuario_logado = usuario
-            print("Login bem-sucedido!\n")
-            if usuario.is_admin:
-                self.menu_administrador()
-            else:
-                self.menu_usuario()
-        else:
-            print("Email ou senha incorretos.\n")
-
-    def cadastrar_usuario(self):
-        email = input("Informe o email do novo usuário: ")
-        senha = input("Informe a senha: ")
-        self.usuarios[email] = Usuario(email, senha)
-        print("Usuário cadastrado com sucesso!\n")
-
     def cadastrar_produto(self):
         codigo = input("Informe o código do produto: ")
         nome = input("Informe o nome do produto: ")
         tipo = input("Informe o tipo do produto (ex: comida, bebida): ")
         preco = float(input("Informe o preço do produto: "))
         setor = input("Informe o setor do produto: ")
-        desconto = float(input("Informe o desconto (em %): ")
+        desconto = float(input("Informe o desconto (em %): "))
         quantidade = int(input("Informe a quantidade em estoque: "))
 
         if any(prod.codigo == codigo for prod in self.produtos):
@@ -237,26 +246,12 @@ class SistemaMercado:
             elif opcao == '2':
                 self.realizar_compra()
             elif opcao == '3':
-                print("1. Buscar por código")
-                print("2. Buscar por setor")
-                busca_opcao = input("Escolha a forma de busca: ")
-                if busca_opcao == '1':
-                    codigo = input("Informe o código do produto para busca: ")
-                    produto = self.buscar_produto(codigo)
-                    if produto:
-                        print(produto)
-                    else:
-                        print("Produto não encontrado.\n")
-                elif busca_opcao == '2':
-                    setor = input("Informe o setor para busca: ")
-                    produtos_setor = self.buscar_produto_setor(setor)
-                    if produtos_setor:
-                        for produto in produtos_setor:
-                            print(produto)
-                    else:
-                        print("Nenhum produto encontrado neste setor.\n")
+                codigo = input("Informe o código do produto para busca: ")
+                produto = self.buscar_produto(codigo)
+                if produto:
+                    print(produto)
                 else:
-                    print("Opção de busca inválida.\n")
+                    print("Produto não encontrado.\n")
             elif opcao == '4':
                 self.avaliar_produto()
             elif opcao == '0':
