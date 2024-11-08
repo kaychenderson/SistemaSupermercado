@@ -7,14 +7,13 @@ Este projeto implementa um sistema de gerenciamento de supermercado em Python. E
 ## ⚙ Funcionalidades
 
 ### 🙋‍♂️ **Cliente:**
-- **Login e Cadastro**: Autenticação e registro de novos usuários.
 - **Listagem de Produtos**: Exibição de produtos disponíveis no supermercado.
 - **Busca de Produtos**: Pesquisa de produtos por código ou setor.
 - **Realização de Compras**: Adiciona produtos ao carrinho e efetua compras.
 - **Avaliação de Produtos**: Permite que o usuário adicione avaliações aos produtos.
 
 ### 👨‍💼 **Administrador:**
-- **Gestão de Produtos**: Cadastro, edição, exclusão e listagem de produtos.
+- **Gestão de Produtos**: Cadastro, listagem, busca, edição e exclusão de produtos.
 - **Controle de Estoque**: Exibição de produtos com estoque abaixo de um limite definido.
 - **Relatório de Vendas**: Exibição do histórico de vendas realizadas.
 
