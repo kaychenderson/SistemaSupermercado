@@ -1,10 +1,18 @@
-# SistemaSupermercado
+<h1 align="center" style="font-weight: bold;"> 🛒 Sistema de Gerenciamento de Supermercado 💻</h1> 
+<p align="center"> 
+    <a href="#desc">Descrição</a> • 
+    <a href="#features">Funcionalidades</a> • 
+    <a href="#install">Instalação</a> • 
+    <a href="#usage">Como Usar</a> • 
+    <a href="#data">Armazenamento de Dados</a> • 
+    <a href="#code">Estrutura do Código</a> 
+</p>
 
-## 🛒 Descrição
+<h2 id="desc" style="font-weight: bold; font-size: 2rem">Descrição</h2> 
 
 Este projeto implementa um sistema de gerenciamento de supermercado em Python. Ele oferece funcionalidades completas, como **cadastro**, **busca**, **edição** e **exclusão de produtos**, além de permitir a **compra de itens**. O sistema também inclui o **controle de estoque**, o **gerenciamento de vendas**, e a possibilidade de **avaliar produtos**. Adicionalmente, conta com mecanismos de autenticação para diferentes perfis de usuários, como **clientes** e **administradores**, garantindo um controle eficaz e seguro das operações.
 
-## ⚙ Funcionalidades
+<h2 id="features" style="font-weight: bold; font-size: 2rem">Funcionalidades</h2> 
 
 ### 🙋‍♂️ **Cliente:**
 - **Listagem de Produtos**: Exibição de produtos disponíveis no supermercado.
@@ -17,7 +25,7 @@ Este projeto implementa um sistema de gerenciamento de supermercado em Python. E
 - **Controle de Estoque**: Exibição de produtos com estoque abaixo de um limite definido.
 - **Relatório de Vendas**: Exibição do histórico de vendas realizadas.
 
-## 📦 Instalação
+<h2 id="install" style="font-weight: bold; font-size: 2rem">Instalação</h2> 
 
 Para usar o sistema, siga as etapas abaixo para instalação:
 
@@ -38,7 +46,7 @@ Basta executar o arquivo principal do sistema:
 ```bash
 python smercado.py
 ```
-## 💡 Como Usar
+<h2 id="usage" style="font-weight: bold; font-size: 2rem">Como Usar</h2> 
 
 ### 1. Login:
 
@@ -62,7 +70,7 @@ Após o login como administrador, você terá acesso às seguintes opções:
 Listar, buscar e avaliar produtos.
 Realizar compras.
 
-## 💾 Armazenamento de Dados
+<h2 id="data" style="font-weight: bold; font-size: 2rem">Armazenamento de Dados</h2> 
 Os dados do sistema são armazenados em um arquivo produtos.txt, que é carregado automaticamente quando o sistema é iniciado e salvo quando há alterações nos produtos ou no estoque.
 
 Exemplo de arquivo produtos.txt:
@@ -72,7 +80,7 @@ Exemplo de arquivo produtos.txt:
 003,Shampoo,Higiene,12.00,Higiene,0,30
 ```
 
-## 🛠️ Estrutura do Código
+<h2 id="code" style="font-weight: bold; font-size: 2rem">Estrutura do Código</h2>
 O código foi organizado em classes principais que definem o comportamento do sistema:
 
 ### Classe Usuario: 
